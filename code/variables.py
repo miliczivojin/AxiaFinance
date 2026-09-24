@@ -3,30 +3,30 @@ from datetime import datetime
 
 COMPANY = yf.Ticker("SIE.DE")
 COLUMN_MAPPING = {
-    "current_assets": ["Current Assets", "Total Current Assets"],
-    "current_liabilities": ["Current Liabilities", "Total Current Liabilities"],
-    "cash_equivalents": ["Cash And Cash Equivalents"],
+    "current_assets": ["current_assets", "total_current_assets"],
+    "current_liabilities": ["current_liabilities", "total_current_liabilities"],
+    "cash_equivalents": ["cash_and_cash_equivalents"],
     "short_term_investments": [
-        "Other Short Term Investments",
-        "Short Term Investments",
-        "Marketable Securities",
+        "other_short_term_investments",
+        "short_term_investments",
+        "marketable_securities",
     ],
     "cash_and_investments": [
-        "Cash Cash Equivalents And Short Term Investments",
-        "Cash And Short Term Investments",
+        "cash_cash_equivalents_and_short_term_investments",
+        "cash_and_short_term_investments",
     ],
-    "restricted_cash": ["Restricted Cash"],
+    "restricted_cash": ["restricted_cash"],
     "current_debt": [
-        "Current Debt And Capital Lease Obligation",
-        "Current Debt",
-        "Current Capital Lease Obligation",
+        "current_debt_and_capital_lease_obligation",
+        "current_debt",
+        "current_capital_lease_obligation",
     ],
     "total_debt": [
-        "Total Debt",
-        "Long Term Debt And Capital Lease Obligation",
+        "total_debt",
+        "long_term_debt_and_capital_lease_obligation",
     ],
-    "minority_interest": ["Minority Interest"],
-    "preferred_stock": ["Preferred Stock Equity"],
+    "minority_interest": ["minority_interest"],
+    "preferred_stock": ["preferred_stock_equity"],
 }
 
 CURRENT_YEAR = datetime.now().year
